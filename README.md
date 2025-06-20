@@ -8,7 +8,8 @@ DocScrubber is a Node.js-based utility designed to handle common but difficult t
 
 ### Core Features
 
-* **Rebuild:** Creates a brand-new, clean version of a document to eliminate all possible bloat from tracked changes, comments, and other invisible data. Preserves basic formatting (headings, lists, tables, etc.).
+* **Self-Installing:** Automatically checks for required packages and prompts to install them on first run for a seamless setup experience.
+* **Rebuild:** Creates a brand-new, clean version of a document to eliminate all possible bloat from tracked changes and comments. Preserves basic formatting (headings, lists, tables, etc.).
 * **Optimize:** Surgically removes specific sources of bloat without a full rebuild.
     * Remove embedded fonts.
     * Remove unused (orphaned) images and media.
@@ -30,6 +31,8 @@ DocScrubber is a Node.js-based utility designed to handle common but difficult t
 
 ### Installation
 
+Getting started is designed to be as simple as possible.
+
 1.  Clone the repository:
     ```bash
     git clone [https://github.com/your-username/doc-scrubber.git](https://github.com/your-username/doc-scrubber.git)
@@ -38,10 +41,13 @@ DocScrubber is a Node.js-based utility designed to handle common but difficult t
     ```bash
     cd doc-scrubber
     ```
-3.  Install the required dependencies:
+3.  Run any command!
     ```bash
-    npm install
+    node . --help
     ```
+    The script will **automatically detect** if you have all the necessary packages. If any are missing, it will list them and ask for your permission to install them for you via `npm`.
+
+    (Alternatively, if you prefer to install dependencies manually, you can run `npm install` before your first use.)
 
 ---
 
