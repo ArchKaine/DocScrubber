@@ -56,12 +56,14 @@ Getting started is designed to be as simple as possible.
 DocScrubber is a command-line tool. All commands follow the pattern: `node . <command> <path> [options]`
 
 #### `rebuild`
+
 The most powerful command for reducing file size. Rebuilds a document from scratch, preserving basic formatting but removing all invisible bloat.
 
 **Syntax:**
 `node . rebuild <path-to-file-or-folder> [--overwrite] [--force]`
 
 **Examples:**
+
 ```bash
 # Rebuild a single file, creating MyDoc_rebuilt.docx
 node . rebuild "./docs/MyDoc.docx"
